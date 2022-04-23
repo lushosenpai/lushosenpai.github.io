@@ -1,0 +1,114 @@
+*{
+	font-family: 'Anton', sans-serif;
+	font-weight: 100;
+	list-style:none;
+	padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(imgs/background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+
+img {
+	height: 300px;
+	width: 250px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-radius: 40%;
+	
+}
+
+.container{	
+	
+	border-color: black;
+	border-width: 20px;
+	border-style: solid;
+	color: aliceblue;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: "nav main"
+	                     "nav skills"
+						 "nav footer"
+						 ;
+
+}
+main {
+	 padding: 20px;
+	 text-align: center;
+     display: grid;
+	 grid-area: main;
+	 ;
+
+}
+
+footer{
+	padding-top: 200px;
+	display: grid;
+	grid-area:footer;
+ 	
+}
+
+
+
+.skills { 
+	padding-top: 100px;
+ 	display: grid;
+	grid-area: skills;
+ 	
+ 
+}
+.skills > b {
+	font-size: 50px;
+    color:black;
+}
+
+h1{
+	font-size: 50px;
+    color:black;
+}
+header {
+	background-color: black;
+	border-style: solid;
+	border-width: 10px;
+	border-color: black;
+    display: grid;
+	grid-area: nav;
+	align-items: center;
+	
+
+}
+header li {
+	padding: 0 0 100px 0;
+ }
+
+header > nav > ul > li > a{
+	
+	text-decoration:none;
+	color: antiquewhite;
+	font-size: 60px;
+	
+
+}
+
+a:hover{
+	background-color: #fff;
+	color: black;
+	transition: 1s;
+	font-size: 70px;
+	border-radius: 30px;
+	
+
+}
+	
+	
+
+
