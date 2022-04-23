@@ -9,28 +9,36 @@ body {
 	background-color: #000 ;
 }
 
+
+
 .grid-container{
 	display: grid;
 	grid-template-columns: 300px 1fr;
-	grid-template-areas: "nav form";
+	grid-template-rows: 1fr 290px;
+	grid-template-areas: "nav form"
+	                        ;
 	border-color: black;
 	border-width: 20px;
 	border-style: solid;
+	
 }
 
 .flex-container {
+
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	background: #333 ;
 	margin: 50px 50px;
-	padding: 20px;
+	padding-top: 20px;
 	border: 8px solid #000;
 	outline: 4px solid #5f9;
+	grid-area: form;
 }
 
 .form {
+	
 	min-width: 400px;
 	flex: 1;
 	text-align: center;
